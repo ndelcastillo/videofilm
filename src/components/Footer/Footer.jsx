@@ -2,11 +2,15 @@ import React from 'react'
 import './footer.css'
 import { FaInstagram, FaTwitter, FaFacebook, FaYoutube, FaSpotify } from 'react-icons/fa'
 
-function Footer() {
+function Footer(props) {
 
     let styleFooter = {
         backgroundColor: "rgb(44,52,64)",
         minHeight: "20vh"
+    }
+
+    let styleFooterGreeting = {
+        color: "white"
     }
 
     let styleFooterText1 = {
@@ -17,7 +21,7 @@ function Footer() {
     let styleFooterText2 = {
         textDecoration: "none",
         listStyle: "none",
-        color:"grey",
+        color: "grey",
         fontSize: "x-small"
     }
 
@@ -32,7 +36,7 @@ function Footer() {
                 <div className='row'>
                     <div className='col-md-6'>
                         <div className=''>
-                            <ul style={styleFooterText1} className='d-flex flex-wrap justify-content-end' >
+                            <ul style={styleFooterText1} className='d-flex flex-wrap justify-content-end ' >
                                 <li className=''>About</li>
                                 <li className='ms-3'>News</li>
                                 <li className='ms-3'>Podcast</li>
@@ -43,8 +47,8 @@ function Footer() {
                             </ul>
                         </div>
                         <div className=''>
-                            <ul className='d-flex flex-wrap justify-content-end me-5' >
-                                <li style={styleFooterText2} className=''>© VideoFilm Limited. Made by ndelcastillo in Buenos Aires Argentina 2023. </li>
+                            <ul className='d-flex flex-wrap justify-content-end me-0' >
+                                <li style={styleFooterText2} className=''>© VideoFilm Limited. Made by <strong> ndelcastillo </strong> in Buenos Aires Argentina 2023. </li>
                             </ul>
                         </div>
                     </div>

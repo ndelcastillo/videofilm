@@ -9,3 +9,17 @@ h4{
 h5{
     color: white;
 }
+
+#cardItemImg{
+    cursor: pointer; 
+}
+
+#cardItemImg:hover{
+    cursor: pointer; 
+}
+
+#cardItemTitle{
+    cursor: pointer;
+    background-image: url();
+    filter: opacity();
+}
