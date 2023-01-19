@@ -31,7 +31,7 @@ function Footer(props) {
     }
 
     return (
-        <div style={styleFooter} className='d-flex align-items-center justify-content-center' >
+        <div style={styleFooter} className='d-flex align-items-center justify-content-center mt-5' >
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-6'>

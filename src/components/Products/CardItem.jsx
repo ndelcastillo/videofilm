@@ -1,8 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './cardItem.css'
 import Stack from 'react-bootstrap/Stack'
 import { Button } from 'react-bootstrap'
+import ItemCount from '../ItemCount/ItemCount'
 
 function CardItem(props) {
     const { title, img, price } = props
@@ -38,6 +39,11 @@ function CardItem(props) {
         setImageOpacity(!imageOpacity)
     }
 
+    useEffect(() => (
+        console.log("montaje")
+    ), []
+    )
+
     return (
         <div className='container'>
             <div className='cardItem mt-5 mx-auto w-100 text-center'>
@@ -45,12 +51,15 @@ function CardItem(props) {
                 <div className='cardBody'>
                     {/*<h4 className='mt-3' id='cardItemTitle' style={{fontWeight: fontWeightNew, textDecoration: textDecoration}} onClick={handleClickTxt}  >{title}</h4>*/}
                     <Stack className='justify-content-center mt-3' direction='horizontal' gap={1}>
-                        <Button onClick={handleClickColor1} style={{ backgroundColor: colorToggle1 ? "" : "grey", filter: imageOpacity ? "opacity(1)" : "opacity(1)" }} variant='outline-secondary' size="sm">🤮</Button>
-                        <Button onClick={handleClickColor2} style={{ backgroundColor: colorToggle2 ? "" : "grey", filter: imageOpacity ? "opacity(1)" : "opacity(1)" }} variant='outline-secondary' size="sm">😒</Button>
-                        <Button onClick={handleClickColor3} style={{ backgroundColor: colorToggle3 ? "" : "grey", filter: imageOpacity ? "opacity(1)" : "opacity(1)" }} variant='outline-secondary' size="sm">😐</Button>
-                        <Button onClick={handleClickColor4} style={{ backgroundColor: colorToggle4 ? "" : "grey", filter: imageOpacity ? "opacity(1)" : "opacity(1)" }} variant='outline-secondary' size="sm">😲</Button>
-                        <Button onClick={handleClickColor5} style={{ backgroundColor: colorToggle5 ? "" : "grey", filter: imageOpacity ? "opacity(1)" : "opacity(1)" }} variant='outline-secondary' size="sm">🤯</Button>
+                        <Button onClick={handleClickColor1} style={{ backgroundColor: colorToggle1 ? "" : "grey" }} variant='outline-secondary' size="sm">🤮</Button>
+                        <Button onClick={handleClickColor2} style={{ backgroundColor: colorToggle2 ? "" : "grey" }} variant='outline-secondary' size="sm">😒</Button>
+                        <Button onClick={handleClickColor3} style={{ backgroundColor: colorToggle3 ? "" : "grey" }} variant='outline-secondary' size="sm">😐</Button>
+                        <Button onClick={handleClickColor4} style={{ backgroundColor: colorToggle4 ? "" : "grey" }} variant='outline-secondary' size="sm">😲</Button>
+                        <Button onClick={handleClickColor5} style={{ backgroundColor: colorToggle5 ? "" : "grey" }} variant='outline-secondary' size="sm">🤯</Button>
                     </Stack>
+                    <div>
+                        <ItemCount />
+                    </div>
                 </div>
             </div>
         </div>

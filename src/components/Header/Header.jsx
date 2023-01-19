@@ -5,7 +5,7 @@ import CarouselImg from '../CarouselImg/CarouselImg'
 
 function Header() {
     return (
-        <div className='header'>
+        <div className='header pb-1'>
             <NavBar/>
             <CarouselImg/>
         </div>
