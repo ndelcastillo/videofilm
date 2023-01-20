@@ -11,9 +11,9 @@ function ItemListContainerMainPov() {
         </div>
       </div>
       <hr style={{ color: "white" }} />
-      <div className='row mt-1'>
-        <div className='col-md-2'>
-          <CardItemMainPov
+      <div className='row mt-5 ' /*style={{backgroundImage:"url(https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp)"}} */ >
+        <div className='col-md-2 rounded'>
+          <CardItemMainPov 
             title="City Of God"
             img='/assets/images/movies/cityOfGod.png'
           />
@@ -44,7 +44,7 @@ function ItemListContainerMainPov() {
         </div>
         <div className='col-md-2'>
           <CardItemMainPov
-            title="Batman: The Dark Knight"
+            title="The Dark Knight"
             img='/assets/images/movies/theDarkKnight.png'
           />
         </div>
