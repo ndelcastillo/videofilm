@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import './cardItem.css'
-import Stack from 'react-bootstrap/Stack'
-import { Button } from 'react-bootstrap'
+import { Card, Button, Stack } from 'react-bootstrap'
 import ItemCount from '../ItemCount/ItemCount'
 
 function CardItem(props) {
-    const { title, img, price } = props
+    const { name, img, price } = props
 
     const [colorToggle1, setColorToggle1] = useState(true)
     const [colorToggle2, setColorToggle2] = useState(true)
@@ -45,11 +44,13 @@ function CardItem(props) {
     )
 
     return (
-        <div className='container'>
-            <div className='cardItem mt-5 mx-auto w-100 text-center'>
-                <img src={img} style={{ filter: imageOpacity ? "opacity(0.3)" : "opacity(1)" }} onClick={handleClickImgOpacity} className='cardImg mx-auto w-100' id='cardItemImg' alt='cardImg' />
-                <div className='cardBody'>
-                    {/*<h4 className='mt-3' id='cardItemTitle' style={{fontWeight: fontWeightNew, textDecoration: textDecoration}} onClick={handleClickTxt}  >{title}</h4>*/}
+        <div className='p-2 m-1'>
+            <Card className='bg-dark text-light'>
+                <div className='mx-auto w-100'>
+                    <Card.Img variant="top" src={img} style={{ filter: imageOpacity ? "opacity(0.3)" : "opacity(1)" }} onClick={handleClickImgOpacity} className='mx-auto w-100' id='cardItemImg' alt='cardImg' />
+                </div>
+                <Card.Body className=''>
+                    <Card.Title style={{ fontSize: "14px" }}>{name}</Card.Title>
                     <Stack className='justify-content-center mt-3' direction='horizontal' gap={1}>
                         <Button onClick={handleClickColor1} style={{ backgroundColor: colorToggle1 ? "" : "grey" }} variant='outline-secondary' size="sm">🤮</Button>
                         <Button onClick={handleClickColor2} style={{ backgroundColor: colorToggle2 ? "" : "grey" }} variant='outline-secondary' size="sm">😒</Button>
@@ -60,8 +61,8 @@ function CardItem(props) {
                     <div>
                         <ItemCount />
                     </div>
-                </div>
-            </div>
+                </Card.Body>
+            </Card>
         </div>
     )
 }

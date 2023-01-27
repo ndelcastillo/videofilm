@@ -13,10 +13,10 @@ function MainTi() {
             <hr style={{ color: "white" }} />
             <div className='row d-flex justify-content-between'>
                 <div className='col-md-4 mt-1'>
-                    <div className='w-100' id='mainLnBox2'>
+                    <div className='w-100'>
                         <Card className="bg-dark text-secondary">
                             <div style={{ height: "100%" }}>
-                                <iframe variant="top" className='w-100 h-100 mw-100 mh-100' src="https://www.youtube.com/embed/mWSVB7FMmoE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe variant="top" className='w-100 h-100 mw-100 mh-100' src="https://www.youtube.com/embed/mWSVB7FMmoE?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "small" }}>
@@ -30,7 +30,7 @@ function MainTi() {
                     <div className='w-100' id='mainLnBox2'>
                         <Card className="bg-dark text-secondary">
                             <div style={{ height: "100%" }}>
-                                <iframe variant="top" className='w-100 h-100 mw-100 mh-100' src="https://www.youtube.com/embed/TO6a_5e5M3U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe variant="top" className='w-100 h-100 mw-100 mh-100' src="https://www.youtube.com/embed/TO6a_5e5M3U?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "small" }}>
@@ -44,7 +44,7 @@ function MainTi() {
                     <div className='w-100' id='mainLnBox2'>
                         <Card className="bg-dark text-secondary">
                             <div style={{ height: "100%" }}>
-                                <iframe variant="top" className='w-100 h-100 mw-100 mh-100' src="https://www.youtube.com/embed/8waAh4v01QQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe variant="top" className='w-100 h-100 mw-100 mh-100' src="https://www.youtube.com/embed/8waAh4v01QQ?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                             <Card.Body>
                                 <Card.Text style={{ fontSize: "small" }}>

@@ -1,7 +1,3 @@
-.cardImg{
-    width: 50px;
-}
-
 h4{
     color: white;
 }
@@ -12,11 +8,9 @@ h5{
 
 #cardItemImg{
     cursor: pointer; 
-    translate: ini;
 }
 
 #cardItemTitle{
     cursor: pointer;
-    background-image: url();
-    filter: opacity();
 }
+

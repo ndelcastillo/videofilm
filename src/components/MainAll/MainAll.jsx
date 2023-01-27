@@ -9,7 +9,7 @@ import MainRe from '../MainRe/MainRe'
 
 function MainAll() {
   return (
-    <div className='container '>
+    <div className='container p-5'>
         <MainCover/>
         <ItemListContainerMainPov/>
         <MainLn/>
