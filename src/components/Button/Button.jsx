@@ -11,7 +11,7 @@ function Btn({children}) {
     }
     
   return (
-    <div>
+    <div className='text-center'>
         <Button style={{backgroundColor: color}} variant='outline-secondary' size="sm" onClick={handleClick}>
             {children}
         </Button>

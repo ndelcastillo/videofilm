@@ -7,7 +7,7 @@ function MainTi() {
         <div className='justify-content-center align-items-center h-100 mt-4 pt-4'>
             <div className='row'>
                 <div className='col-md-12'>
-                    <h1 id='itemListContainerMainPovTitle' className='pb-0 mb-0'>TOP INTERVIEWS</h1>
+                    <h1 style={{fontSize:"medium", color:"white"}}className='pb-0 mb-0'>TOP INTERVIEWS</h1>
                 </div>
             </div>
             <hr style={{ color: "white" }} />

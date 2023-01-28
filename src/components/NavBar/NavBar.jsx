@@ -20,8 +20,8 @@ function NavScrollExample() {
   return (
     <Navbar className='p-4' bg="dark" variant='dark' expand="lg" fixed='top'>
       <Container fluid>
-        <Link style={{textDecoration:"none"}} to={"/"}>
-          <Navbar.Brand style={styleH1} href="#">{title}</Navbar.Brand>
+        <Link style={{ textDecoration: "none" }} to={"/"}>
+          <Navbar.Brand style={styleH1}>{title}</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -30,21 +30,23 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Movies</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+            <Nav.Link href="#action1">News</Nav.Link>
+            <Nav.Link href="#action2">Reviews</Nav.Link>
+            <Nav.Link href="#action2">Interviews</Nav.Link>
+            <NavDropdown title="Movies" id="navbarScrollingDropdown">
+              <Link to="/movies/top100/" className='dropdown-item' >Top 100</Link>
+              <NavDropdown.Item href="#action4">Most Popular</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Release Calendar</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action5">Browse by Genre</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" >
-              Link
-            </Nav.Link>
+            <NavDropdown title="Series" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action6">Top 50</NavDropdown.Item>
+              <NavDropdown.Item href="#action7">Most Popular</NavDropdown.Item>
+              <NavDropdown.Item href="#action8">Release Calendar</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action9">Browse by Genre</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
           <Form className="d-flex">
             <Form.Control

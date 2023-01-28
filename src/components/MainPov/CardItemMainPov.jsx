@@ -10,8 +10,7 @@ function CardItemMainPov(props) {
     const { title, img, link } = props
 
     return (
-        <div style={{cursor:"pointer"}}>
-            <Link to={`/movies/${props.id}`}>
+        <div style={{ cursor: "" }}>
                 <Card className='bg-dark text-light'>
                     <div className='mx-auto w-100'>
                         <Card.Img variant="top" src={img} className='mx-auto w-100' id='cardItemImg' alt='cardImg' />
@@ -31,7 +30,6 @@ function CardItemMainPov(props) {
                         </Stack>
                     </Card.Body>
                 </Card>
-            </Link>
         </div>
     )
 }

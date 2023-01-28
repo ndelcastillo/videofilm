@@ -1,29 +1,30 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { getSingleItem } from '../../services/mockAPI'
+import { useParams } from 'react-router-dom'
 import './itemDetailContainer.css'
 import ItemDetail from './ItemDetail'
 
-function ItemDetailContainer(props) {
-    const [moviesState, setMoviesState] = useState({});
+function ItemDetailContainer() {
+    const [movies, setMovies] = useState({});
     const [error, setError] = useState(false)
 
+    const { id } = useParams();
+    console.log("Params:", useParams())
+
     useEffect(() => {
-        getSingleItem()
-            .then((responseMovies) => {
-                setMoviesState(responseMovies)
-            })
+        getSingleItem(id)
+            .then((responseMovies) => setMovies(responseMovies))
             .catch((errormsg) => {
                 setError(errormsg.message)
-                console.log('error recibed', error)
             })
-    }, [])
+    }, [id]);
 
     return (
         <div className='pt-5 mt-5'>
-            <div className='container justify-content-center align-items-center h-100 p-5'>
+            <div className='container h-100 '>
                 <div>
-                    <ItemDetail movies={moviesState} />
+                    <ItemDetail movies={movies} />
                 </div>
             </div>
         </div>

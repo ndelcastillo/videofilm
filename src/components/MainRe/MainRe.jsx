@@ -7,7 +7,7 @@ function MainRe() {
     <div className='justify-content-center align-items-center h-100 mt-3 pt-3' >
       <div className='row'>
         <div className='col-md-12'>
-          <h1 id='itemListContainerMainPovTitle' className='pb-0 mb-0'>REVIEWS</h1>
+          <h1 style={{fontSize:"medium", color:"white"}} className='pb-0 mb-0'>REVIEWS</h1>
         </div>
       </div>
       <hr style={{ color: "white" }} />

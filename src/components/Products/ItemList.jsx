@@ -11,6 +11,7 @@ function ItemList(props) {
             return <div className='col-md-3' key={item.id}>
               <CardItem
                 key={item.id}
+                id={item.id}
                 name={item.name}
                 year={item.year}
                 director={item.director}
