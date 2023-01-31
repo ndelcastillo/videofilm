@@ -30,23 +30,11 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">News</Nav.Link>
-            <Nav.Link href="#action2">Reviews</Nav.Link>
-            <Nav.Link href="#action2">Interviews</Nav.Link>
-            <NavDropdown title="Movies" id="navbarScrollingDropdown">
-              <Link to="/movies/top100/" className='dropdown-item' >Top 100</Link>
-              <NavDropdown.Item href="#action4">Most Popular</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Release Calendar</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Browse by Genre</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Series" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action6">Top 50</NavDropdown.Item>
-              <NavDropdown.Item href="#action7">Most Popular</NavDropdown.Item>
-              <NavDropdown.Item href="#action8">Release Calendar</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action9">Browse by Genre</NavDropdown.Item>
-            </NavDropdown>
+            <Link className='nav-link'to="">News</Link>
+            <Link className='nav-link'to="">Reviews</Link>
+            <Link className='nav-link'to="">Interviews</Link>
+            <Link className='nav-link'to="/movies/top100/">Movies</Link>
+            <Link className='nav-link'to="">Series</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

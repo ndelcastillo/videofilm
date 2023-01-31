@@ -8,7 +8,7 @@ function ItemList(props) {
       <div className='row'>
         <div className='d-flex flex-row flex-wrap'>
           {props.movies.map((item) => {
-            return <div className='col-md-3' key={item.id}>
+            return <div className='col-md-2' key={item.id}>
               <CardItem
                 key={item.id}
                 id={item.id}

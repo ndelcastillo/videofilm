@@ -19,21 +19,23 @@ export default function ItemCount() {
     }
 
     return (
-        <div className='text-center itemCountAll'>
-            <Stack className='justify-content-center mt-3' direction='' gap={2}>
-                <div className='text-center'>
-                    <Button className='itemCountHandleMinus' variant='outline-secondary' size="sm" onClick={handleMinus}>-</Button>
-                    <span className='' variant='outline-secondary' size="sm">{qty}</span>
-                    <Button className='itemCountHandlePlus ' variant='outline-secondary' size="sm" onClick={handlePlus}>+</Button>
-                </div>
-                {/*
+        <div className='row'>
+            <div className='col-md-12'>
+                <Stack className='justify-content-center' direction='' gap={2}>
+                    <div className='text-center'>
+                        <Button className='itemCountHandleMinus' variant='outline-secondary' size="sm" onClick={handleMinus}>-</Button>
+                        <span className='' variant='outline-secondary' size="sm">{qty}</span>
+                        <Button className='itemCountHandlePlus ' variant='outline-secondary' size="sm" onClick={handlePlus}>+</Button>
+                    </div>
+                    {/*
                 <div className='text-center'>
                     <Button className='' variant='outline-secondary' size="sm" onClick={onAdd} >
                         Agregar al carrito
                     </Button>
                 </div>
-                */}   
-            </Stack>
+                */}
+                </Stack>
+            </div>
         </div>
     )
 }

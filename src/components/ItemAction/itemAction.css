@@ -1,0 +1,13 @@
+li{
+    color: white;
+}
+
+.footerIcons{
+    height: 40px;
+    width: 52px;
+    color: grey;
+}
+
+.itemActionText{
+    font-size: 14px;
+}
