@@ -4,7 +4,7 @@ import './cardItem.css'
 
 function ItemList(props) {
   return (
-    <div className=''>
+    <div>
       <div className='row'>
         <div className='d-flex flex-row flex-wrap'>
           {props.movies.map((item) => {

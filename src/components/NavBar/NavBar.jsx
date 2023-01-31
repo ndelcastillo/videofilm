@@ -33,8 +33,8 @@ function NavScrollExample() {
             <Link className='nav-link'to="">News</Link>
             <Link className='nav-link'to="">Reviews</Link>
             <Link className='nav-link'to="">Interviews</Link>
-            <Link className='nav-link'to="/movies/top100/">Movies</Link>
-            <Link className='nav-link'to="">Series</Link>
+            <Link className='nav-link'to="/categoria/movies">Movies</Link>
+            <Link className='nav-link'to="/categoria/series">Series</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

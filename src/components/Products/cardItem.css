@@ -6,11 +6,15 @@ h5{
     color: white;
 }
 
-#cardItemImg{
-    cursor: pointer; 
-}
-
 #cardItemTitle{
     cursor: pointer;
 }
 
+#cardItemCardImg{
+    border-color: none;
+    cursor: pointer; 
+}
+
+#cardItemCardImg:hover{
+    border-color: lightgrey;
+}

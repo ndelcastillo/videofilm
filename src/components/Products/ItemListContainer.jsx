@@ -1,33 +1,45 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import './itemListContainer.css'
-import { getItems } from "../../services/mockAPI"
+import { getItems, getItemsByCategory } from "../../services/mockAPI"
 import ItemList from './ItemList'
+import ProductsNavBar from '../ProductsNavBar/ProductsNavBar'
 
 function ItemListContainer(props) {
   const [movies, setMovies] = useState([]);
+  console.log(useParams())
+
+  const { cat } = useParams ()
 
   useEffect(() => {
-    getItems()
-      .then((responseMovies) =>
-        setMovies(responseMovies))
-      .catch((error) =>
-        console.log('error recibidos', error)
-      )
-  }, []
-  );
+    if (cat === undefined) {
+      getItems().then((responseMovies) => setMovies(responseMovies))
+    } else {
+      getItemsByCategory(cat).then((responseMoviesFiltrados) => setMovies(responseMoviesFiltrados))
+    }
+  }, [cat]);
 
   return (
     <div className='mt-5 pt-3'>
-      <div className='container justify-content-center align-items-center h-100 p-5'>
-        <div className='row'>
-          <div className='col-md-12'>
-            <h1 style={{fontSize:"large", color:"white"}} className='pb-0 mb-0'>{props.greeting}</h1>
+      <div className='container'>
+        <div className='justify-content-center align-items-center h-100 p-5'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <h1 style={{ fontSize: "large", color: "white" }} className='pb-0 mb-0'>{props.greeting}</h1>
+            </div>
           </div>
-        </div>
-        <hr style={{ color: "white" }} />
-        <div>
-          <ItemList movies={movies} />
+          <hr style={{ color: "white" }} />
+          <div className='d-flex'>
+            <div>
+              <div className='pt-3'>
+                <ProductsNavBar />
+              </div>
+            </div>
+            <div>
+              <ItemList movies={movies} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

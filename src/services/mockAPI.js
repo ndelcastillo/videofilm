@@ -9,7 +9,7 @@ const movies = [
         genres: ["Crime,", " Drama."],
         img: "/assets/images/movies/cityOfGod.png",
         trailer: "https://www.youtube.com/embed/JYKs35P2fZw",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailCityOfGod.png"
     },
     {
@@ -22,7 +22,7 @@ const movies = [
         genres: ["Science-Fiction,", " Action,", " Adeventure."],
         img: "/assets/images/movies/inception.png",
         trailer: "https://www.youtube.com/embed/8hP9D6kZseM",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailInception.png"
     },
     {
@@ -35,7 +35,7 @@ const movies = [
         genres: ["Thriller,", " Crime,", " Mistery."],
         img: "/assets/images/movies/seven.png",
         trailer: "https://www.youtube.com/embed/SpKbZ_3zlb0",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailSe7en.png"
     },
     {
@@ -48,7 +48,7 @@ const movies = [
         genres: ["Comedy,", " Drama,", " Thriller."],
         img: "/assets/images/movies/parasite.png",
         trailer: "https://www.youtube.com/embed/5xH0HfJHsaY",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailParasite.png"
     },
     {
@@ -61,7 +61,7 @@ const movies = [
         genres: ["Crime,", " Thirller."],
         img: "/assets/images/movies/pulpFiction.png",
         trailer: "https://www.youtube.com/embed/s7EdQ4FqbhY",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailPulpFiction.png"
     },
     {
@@ -74,7 +74,7 @@ const movies = [
         genres: ["Science-Fiction,", "Action."],
         img: "/assets/images/movies/matrix.png",
         trailer: "https://www.youtube.com/embed/m8e-FF8MsqU",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailTheMatrix.png"
     },
     {
@@ -87,7 +87,7 @@ const movies = [
         genres: ["Action,", " Drama,", " Crime."],
         img: "/assets/images/movies/theProfessional.png",
         trailer: "https://www.youtube.com/embed/FAOzXGibKJc",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailTheProfessional.png"
     },
     {
@@ -100,7 +100,7 @@ const movies = [
         genres: ["Drama,", " Music."],
         img: "/assets/images/movies/whiplash.png",
         trailer: "https://www.youtube.com/embed/Qa34Q7wo_oQ",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailWhiplash.png"
     },
     {
@@ -113,7 +113,7 @@ const movies = [
         genres: ["Fantasy,", " Crime,", " Drama."],
         img: "/assets/images/movies/greenMile.png",
         trailer: "https://www.youtube.com/embed/Bg7epsq0OIQ",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailGreenMile.png"
     },
     {
@@ -126,7 +126,7 @@ const movies = [
         genres: ["Drama,", " Comedy,", " Thriller."],
         img: "/assets/images/movies/fightClub.png",
         trailer: "https://www.youtube.com/embed/SUXWAEX2jlg",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailFightClub.png"
     },
     {
@@ -139,7 +139,7 @@ const movies = [
         genres: ["Science-Fiction,", " Drama,", " Adeventure"],
         img: "/assets/images/movies/interstellar.png",
         trailer: <iframe width="560" height="315" src="https://www.youtube.com/embed/zSWdZVtXT7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailInterstellar.png"
     },
     {
@@ -152,7 +152,7 @@ const movies = [
         genres: ["Drama,", " Crime"],
         img: "/assets/images/movies/goodfellas.png",
         trailer: "https://www.youtube.com/embed/xWMxvFvhAB8",
-        category:"Movie.",
+        category:"movies",
         portada:"/assets/images/portada/portadaItemDetailGoodfellas.png"
     },
     {
@@ -165,7 +165,7 @@ const movies = [
         genres: ["Drama,", " Thriller,", " Horror"],
         img: "/assets/images/movies/psycho.png",
         trailer: "https://www.youtube.com/embed/NG3-GlvKPcg",
-        category:"Movie.",
+        category:"series",
         portada:"/assets/images/portada/portadaItemDetailPsycho.png"
     },
     {
@@ -178,7 +178,7 @@ const movies = [
         genres: ["War,", " History,", " Drama"],
         img: "/assets/images/movies/savingPrivateRyan.png",
         trailer: "https://www.youtube.com/embed/zwhP5b4tD6g",
-        category:"Movie.",
+        category:"series",
         portada:"/assets/images/portada/portadaItemDetailSavingPrivateRyan.png"
     },
     {
@@ -191,7 +191,7 @@ const movies = [
         genres: ["Action", " Drama,", " Thriller,", " Crime."],
         img: "/assets/images/movies/theDarkKnight.png",
         trailer: "https://www.youtube.com/embed/emYLYfuZAbU",
-        category:"Movie.",
+        category:"series",
         portada:"/assets/images/portada/portadaItemDetailBatmanTheDarkKnight.png"
     },
     {
@@ -204,7 +204,7 @@ const movies = [
         genres: ["Drama,", " Mystery,", " Science-Fiction"],
         img: "/assets/images/movies/thePrestige.png",
         trailer: "https://www.youtube.com/embed/9n2B5WW4SKk",
-        category:"Movie.",
+        category:"series",
         portada:"/assets/images/portada/portadaItemDetailThePrestige.png"
     },
 ]
@@ -215,7 +215,20 @@ export function getItems() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(movies)
-        }, 0)
+        }, 1000)
+    })
+};
+
+//Promesa getItemsByCategory () : me retorna todos los productos por categoria
+export function getItemsByCategory(cat) {
+    return new Promise((resolve, reject) => {
+        let itemFind = movies.filter((item) => {
+            return item.category === cat
+        })
+        setTimeout(() => {
+            if (itemFind) resolve(itemFind)
+            else reject(new Error("item no encontrado"))
+        }, 1000)
     })
 };
 

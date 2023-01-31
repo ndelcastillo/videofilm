@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element={<MainAll/>} />
           {/*<Route path='/' element={<ItemListContainer />} />*/}
-          <Route path='/movies/top100/' element={<ItemListContainer greeting="VIDEOFILM TOP 100 MOVIES" />} />
-          <Route path='/movies/top100/:id' element={<ItemDetailContainer />} />
+          <Route path='/categoria/:cat' element={<ItemListContainer greeting="VIDEOFILM MOVIES" />} />
+          <Route path='/movies/:id' element={<ItemDetailContainer />} />
           <Route path='*' element={<div className='mt-5 pt-5'><h1 style={{color:"white"}}>404: Te perdiste</h1></div>} />
         </Routes>
         <Footer />

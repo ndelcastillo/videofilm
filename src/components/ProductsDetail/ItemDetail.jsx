@@ -11,30 +11,21 @@ function ItemDetail({ movies }) {
     const [colorToggle3, setColorToggle3] = useState(true)
     const [colorToggle4, setColorToggle4] = useState(true)
     const [colorToggle5, setColorToggle5] = useState(true)
-    const [imageOpacity, setImageOpacity] = useState(true)
 
     function handleClickColor1() {
         setColorToggle1(!colorToggle1)
-        setImageOpacity(!imageOpacity)
     }
     function handleClickColor2() {
         setColorToggle2(!colorToggle2)
-        setImageOpacity(!imageOpacity)
     }
     function handleClickColor3() {
         setColorToggle3(!colorToggle3)
-        setImageOpacity(!imageOpacity)
     }
     function handleClickColor4() {
         setColorToggle4(!colorToggle4)
-        setImageOpacity(!imageOpacity)
     }
     function handleClickColor5() {
         setColorToggle5(!colorToggle5)
-        setImageOpacity(!imageOpacity)
-    }
-    function handleClickImgOpacity() {
-        setImageOpacity(!imageOpacity)
     }
 
 
@@ -42,7 +33,7 @@ function ItemDetail({ movies }) {
         <div className=''>
             <div className='row'>
                 <div className='col-md-12'>
-                    <div className='d-flex flex-row justify-content-between mt-2 mb-3'>
+                    <div className='d-flex flex-row justify-content-between mt-3 mb-1'>
                         <h1 style={{ fontSize: "40px", color: "white" }} className=''>{movies.name}</h1>
                         <div className='d-flex justify-content-right'>
                             <h1 style={{ fontSize: "40px", color: "white" }} className=''>{movies.year}.</h1>
@@ -106,7 +97,7 @@ function ItemDetail({ movies }) {
                         <div className='d-flex flex-row justify-content-center'>
                             <div className='col-md-6'>
                                 <div className='mx-auto w-75'>
-                                    <Card.Img variant="top" src={movies.img} style={{ filter: imageOpacity ? "opacity(0.2)" : "opacity(1)" }} onClick={handleClickImgOpacity} className='mx-auto w-100' id='cardItemImg' alt='cardImg' />
+                                    <Card.Img variant="top" src={movies.img} className='' id='cardItemImg' alt='cardImg' />
                                 </div>
                             </div>
                             <div className='col-md-6'>
@@ -117,7 +108,7 @@ function ItemDetail({ movies }) {
                                             <hr style={{ color: "white", width: "400px" }} />
                                         </div>
                                         {/*<ItemCount />*/}
-                                        <Stack className='justify-content-center ' direction='horizontal' gap={2}>
+                                        <Stack className='justify-content-center p-3' direction='horizontal' gap={2}>
                                             <Button onClick={handleClickColor1} style={{ backgroundColor: colorToggle1 ? "" : "grey" }} variant='outline-secondary' size="sm">🤮</Button>
                                             <Button onClick={handleClickColor2} style={{ backgroundColor: colorToggle2 ? "" : "grey" }} variant='outline-secondary' size="sm">😒</Button>
                                             <Button onClick={handleClickColor3} style={{ backgroundColor: colorToggle3 ? "" : "grey" }} variant='outline-secondary' size="sm">😐</Button>

@@ -2,12 +2,24 @@ li{
     color: white;
 }
 
-.footerIcons{
+.itemActionIconImEye{
+    height: 42px;
+    width: 52px;
+    color: grey;
+}
+
+.itemActionIconFaRegHeart{
+    height: 37px;
+    width: 52px;
+    color: grey;
+}
+
+.itemActionIconHiClock{
     height: 40px;
     width: 52px;
     color: grey;
 }
 
 .itemActionText{
-    font-size: 14px;
+    font-size: 12px;
 }

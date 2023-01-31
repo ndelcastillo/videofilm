@@ -7,3 +7,7 @@
     width: 130px;
     height: 200px;
 }
+
+#cardItemImg{
+    filter: opacity(0.8);
+}
