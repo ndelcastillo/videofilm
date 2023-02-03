@@ -6,7 +6,7 @@ const movies = [
         director: " Fernando Meirelles.",
         plot: "Buscapé was raised in a very violent environment. Despite the feeling that all odds were against him, he finds out that life can be seen with other eyes…",
         cast: ["Alexander Rodrigues,", " Leandro Firmino,", " Phellipe Haagensen,", " Douglas Silva."],
-        genres: ["Crime,", " Drama."],
+        genres: "crime",
         img: "/assets/images/movies/cityOfGod.png",
         trailer: "https://www.youtube.com/embed/JYKs35P2fZw",
         category:"movies",
@@ -19,7 +19,7 @@ const movies = [
         director: " Christopher Nolan.",
         plot: "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: “inception”, the implantation of another persons idea into a targets subconscious.",
         cast: ["Leonardo DiCaprio,", " Joseph Gordon-Levitt,", " Ken Watanabe,", " Tom Hardy."],
-        genres: ["Science-Fiction,", " Action,", " Adeventure."],
+        genres: "scifi",
         img: "/assets/images/movies/inception.png",
         trailer: "https://www.youtube.com/embed/8hP9D6kZseM",
         category:"movies",
@@ -32,7 +32,7 @@ const movies = [
         director: " David Fincher.",
         plot: "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the “seven deadly sins” in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer’s mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
         cast: ["Brad Pitt,", " Morgan Freeman,", " Gwyneth Paltrow,", " R. Lee Ermey."],
-        genres: ["Thriller,", " Crime,", " Mistery."],
+        genres: "crime",
         img: "/assets/images/movies/seven.png",
         trailer: "https://www.youtube.com/embed/SpKbZ_3zlb0",
         category:"movies",
@@ -45,7 +45,7 @@ const movies = [
         director: "Bong Joon-ho.",
         plot: "All unemployed, Ki-taek’s family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
         cast: ["Song Kang-ho,", " Lee Sun-kyun,", " Cho Yeo-jeong,", " Choi Woo-shik."],
-        genres: ["Comedy,", " Drama,", " Thriller."],
+        genres: "thriller",
         img: "/assets/images/movies/parasite.png",
         trailer: "https://www.youtube.com/embed/5xH0HfJHsaY",
         category:"movies",
@@ -58,7 +58,7 @@ const movies = [
         director: " Quentin Tarantino.",
         plot: "A burger-loving hit man, his philosophical partner, a drug-addled gangster’s moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
         cast: ["John Travolta,", " Samuel L.Jackson,", " Uma Thurman,", " Bruce Willis."],
-        genres: ["Crime,", " Thirller."],
+        genres: "crime",
         img: "/assets/images/movies/pulpFiction.png",
         trailer: "https://www.youtube.com/embed/s7EdQ4FqbhY",
         category:"movies",
@@ -71,7 +71,7 @@ const movies = [
         director: [" Lilly Wachowski,", " Lana Wachowski."],
         plot: "The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
         cast: ["Keanu Reeves,", " Laurence Fishburne,", " Carrie-Anne Moss,", " Hugo Weaving."],
-        genres: ["Science-Fiction,", "Action."],
+        genres: "scifi",
         img: "/assets/images/movies/matrix.png",
         trailer: "https://www.youtube.com/embed/m8e-FF8MsqU",
         category:"movies",
@@ -84,7 +84,7 @@ const movies = [
         director: " Luc Besson.",
         plot: "Léon, the top hit man in New York, has earned a rep as an effective “cleaner”. But when his next-door neighbors are wiped out by a loose-cannon DEA agent, he becomes the unwilling custodian of 12-year-old Mathilda. Before long, Mathildas thoughts turn to revenge, and she considers following in Léons footsteps.",
         cast: ["Jean Reno,", " Natalie Portman,", " Gary Oldman,", " Danny Aiello."],
-        genres: ["Action,", " Drama,", " Crime."],
+        genres: "crime",
         img: "/assets/images/movies/theProfessional.png",
         trailer: "https://www.youtube.com/embed/FAOzXGibKJc",
         category:"movies",
@@ -97,7 +97,7 @@ const movies = [
         director: " Damien Chazelle.",
         plot: "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
         cast: ["Miles Teller,", " J.K Simmons,", " Melissa Benoist,", " Austin Stowell."],
-        genres: ["Drama,", " Music."],
+        genres: "music",
         img: "/assets/images/movies/whiplash.png",
         trailer: "https://www.youtube.com/embed/Qa34Q7wo_oQ",
         category:"movies",
@@ -105,12 +105,12 @@ const movies = [
     },
     {
         id: 9,
-        name: "Green Mile.",
+        name: "Green Mile",
         year: 1999,
         director: " Frank Darabont.",
         plot: "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal peoples ailments. When the cell blocks head guard, Paul Edgecomb, recognizes Coffeys miraculous gift, he tries desperately to help stave off the condemned mans execution.",
         cast: ["Tom Hanks,", " David Morse,", " Bonnie Hunt,", " Michael Clarke Duncan"],
-        genres: ["Fantasy,", " Crime,", " Drama."],
+        genres: "drama",
         img: "/assets/images/movies/greenMile.png",
         trailer: "https://www.youtube.com/embed/Bg7epsq0OIQ",
         category:"movies",
@@ -123,7 +123,7 @@ const movies = [
         director: " David Finche.r",
         plot: "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground “fight clubs” forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
         cast: ["Edward Norton,", " Brad Pitt,", " Helena Bonham Carter,", " Meat Loaf."],
-        genres: ["Drama,", " Comedy,", " Thriller."],
+        genres: "thriller",
         img: "/assets/images/movies/fightClub.png",
         trailer: "https://www.youtube.com/embed/SUXWAEX2jlg",
         category:"movies",
@@ -136,7 +136,7 @@ const movies = [
         director: " Christopher Nolan.",
         plot: "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
         cast: ["Mathew McConaughey,", " Anne Hathaway,", " Jessica Chastain,", " Mackenzie Foy."],
-        genres: ["Science-Fiction,", " Drama,", " Adeventure"],
+        genres: "scifi",
         img: "/assets/images/movies/interstellar.png",
         trailer: <iframe width="560" height="315" src="https://www.youtube.com/embed/zSWdZVtXT7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
         category:"movies",
@@ -149,7 +149,7 @@ const movies = [
         director: " Martin Scorsese.",
         plot: "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
         cast: ["Ray Liotta,", " Robert De Niro,", " Joe Pesci,", " Lorraine Bracco"],
-        genres: ["Drama,", " Crime"],
+        genres: "crime",
         img: "/assets/images/movies/goodfellas.png",
         trailer: "https://www.youtube.com/embed/xWMxvFvhAB8",
         category:"movies",
@@ -162,7 +162,7 @@ const movies = [
         director: " Alfred Hitchcock.",
         plot: "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother. The place seems quirky, but fine… until Marion decides to take a shower.",
         cast: ["Anthony Perkins,", " Janet Leigh,", " Vera Miles,", " John Gavin."],
-        genres: ["Drama,", " Thriller,", " Horror"],
+        genres: "horror",
         img: "/assets/images/movies/psycho.png",
         trailer: "https://www.youtube.com/embed/NG3-GlvKPcg",
         category:"series",
@@ -170,12 +170,12 @@ const movies = [
     },
     {
         id: 14,
-        name: "Saving Private Ryan.",
+        name: "Saving Private Ryan",
         year: 1998,
         director: " Steven Spilberg",
         plot: "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
         cast: ["Tom Hanks,", " Tom Sizemore,", " Edward Burns,", " Matt Damon."],
-        genres: ["War,", " History,", " Drama"],
+        genres: "war",
         img: "/assets/images/movies/savingPrivateRyan.png",
         trailer: "https://www.youtube.com/embed/zwhP5b4tD6g",
         category:"series",
@@ -188,7 +188,7 @@ const movies = [
         director: " Christopher Nolan",
         plot: "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
         cast: ["Christian Bale,", " Heath Ledger,", " Michael Caine,", " Gary Oldman."],
-        genres: ["Action", " Drama,", " Thriller,", " Crime."],
+        genres: "action",
         img: "/assets/images/movies/theDarkKnight.png",
         trailer: "https://www.youtube.com/embed/emYLYfuZAbU",
         category:"series",
@@ -201,7 +201,7 @@ const movies = [
         director: " Christopher Nolan.",
         plot: "A mysterious story of two magicians whose intense rivalry leads them on a life-long battle for supremacy – full of obsession, deceit and jealousy with dangerous and deadly consequences.",
         cast: ["Hugh Jackman", " Christian Bale", " Michael Caine", " Scarlett Johansson."],
-        genres: ["Drama,", " Mystery,", " Science-Fiction"],
+        genres: "mistery",
         img: "/assets/images/movies/thePrestige.png",
         trailer: "https://www.youtube.com/embed/9n2B5WW4SKk",
         category:"series",
@@ -215,20 +215,7 @@ export function getItems() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(movies)
-        }, 1000)
-    })
-};
-
-//Promesa getItemsByCategory () : me retorna todos los productos por categoria
-export function getItemsByCategory(cat) {
-    return new Promise((resolve, reject) => {
-        let itemFind = movies.filter((item) => {
-            return item.category === cat
-        })
-        setTimeout(() => {
-            if (itemFind) resolve(itemFind)
-            else reject(new Error("item no encontrado"))
-        }, 1000)
+        }, 0)
     })
 };
 
@@ -245,4 +232,31 @@ export function getSingleItem(idItem) {
     })
 };
 
-//Promesa getItemsByCategory (cat) : me retorna la ctaegoria seleccionada
+/*
+//Promesa getItemsByCategory (cat) : me retorna la categoria seleccionada
+export function getItemsByCategory(cat) {
+    return new Promise((resolve, reject) => {
+        let itemFind = movies.filter((item) => {
+            return item.category === cat
+        })
+        setTimeout(() => {
+            if (itemFind) resolve(itemFind)
+            else reject(new Error("item no encontrado"))
+        }, 0)
+    })
+};
+*/
+
+
+//Promesa getItemsByGenres (gen) : me retorna el genero seleccionado
+export function getItemsByGenres(gen) {
+    return new Promise((resolve, reject) => {
+        let itemFind = movies.filter((item) => {
+            return item.genres === gen
+        })
+        setTimeout(() => {
+            if (itemFind) resolve(itemFind)
+            else reject(new Error("item no encontrado"))
+        }, 0)
+    })
+};

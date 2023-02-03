@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import './itemListContainer.css'
-import { getItems, getItemsByCategory } from "../../services/mockAPI"
+import { getItems, getItemsByCategory, getItemsByGenres } from "../../services/mockAPI"
 import ItemList from './ItemList'
 import ProductsNavBar from '../ProductsNavBar/ProductsNavBar'
 
@@ -10,15 +10,17 @@ function ItemListContainer(props) {
   const [movies, setMovies] = useState([]);
   console.log(useParams())
 
-  const { cat } = useParams ()
+  const { gen } = useParams()
 
   useEffect(() => {
-    if (cat === undefined) {
-      getItems().then((responseMovies) => setMovies(responseMovies))
+    if (gen === undefined) {
+      getItems()
+        .then((responseMovies) => setMovies(responseMovies))
     } else {
-      getItemsByCategory(cat).then((responseMoviesFiltrados) => setMovies(responseMoviesFiltrados))
+      getItemsByGenres(gen)
+        .then((responseMoviesFiltrados) => setMovies(responseMoviesFiltrados))
     }
-  }, [cat]);
+  }, [gen]);
 
   return (
     <div className='mt-5 pt-3'>

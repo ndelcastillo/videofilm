@@ -19,6 +19,7 @@ function ItemList(props) {
                 cast={item.cast}
                 genres={item.genres}
                 img={item.img}
+                onClick={() => { console.log(`Pelicula elegida: ${item.name}`) }}
               />
             </div>
           })

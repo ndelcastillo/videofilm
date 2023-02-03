@@ -28,6 +28,10 @@ function ItemDetail({ movies }) {
         setColorToggle5(!colorToggle5)
     }
 
+    function handleAddToWatchlist (name) {
+        alert (`${movies.name} add to Watchlist`)
+    }
+
 
     return (
         <div className=''>
@@ -103,7 +107,7 @@ function ItemDetail({ movies }) {
                             <div className='col-md-6'>
                                 <Card className='bg-dark tex-light'>
                                     <Card.Body className=''>
-                                        <ItemAction />
+                                        <ItemAction handleAddToWatchlist={handleAddToWatchlist} />
                                         <div className='d-flex justify-content-center'>
                                             <hr style={{ color: "white", width: "400px" }} />
                                         </div>
@@ -117,6 +121,9 @@ function ItemDetail({ movies }) {
                                         </Stack>
                                         <div className='d-flex justify-content-center'>
                                             <hr style={{ color: "white", width: "400px" }} />
+                                        </div>
+                                        <div className='m-2'>
+                                            <ItemCount />
                                         </div>
                                     </Card.Body>
                                 </Card>

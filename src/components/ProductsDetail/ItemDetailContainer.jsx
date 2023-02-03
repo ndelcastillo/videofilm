@@ -15,9 +15,7 @@ function ItemDetailContainer() {
     useEffect(() => {
         getSingleItem(id)
             .then((responseMovies) => setMovies(responseMovies))
-            .catch((errormsg) => {
-                setError(errormsg.message)
-            })
+            .catch((errormsg) => setError(errormsg.message))
     }, [id]);
 
     return (

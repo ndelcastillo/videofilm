@@ -7,10 +7,12 @@ export default function ItemCount() {
     const [qty, setQty] = useState(1)
 
     function handlePlus() {
+        if (qty < 10)
         setQty(qty + 1)
     }
 
     function handleMinus() {
+        if (qty > 1)
         setQty(qty - 1)
     }
 

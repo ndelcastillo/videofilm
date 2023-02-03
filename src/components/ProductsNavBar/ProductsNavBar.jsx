@@ -11,113 +11,128 @@ function ProductsNavBar() {
                         <ul className='d-flex flex-column align-items-start mt-4'>
                             <li>
                                 <Link className='nav-link' to="/categoria/movies">
-                                    <span className='ms-1 d-none d-sm-inline'>Movies</span>
+                                    <p style={{fontSize:"large"}} className='me-4 d-none d-sm-inline'>Movies</p>
                                 </Link>
                             </li>
                             <li>
-                                <Link className='nav-link ' to="/categoria/series">
-                                    <span className='ms-1 d-none d-sm-inline'>Series</span>
+                                <Link className='nav-link ' to="/categoria/movies"> {/* aca debe ir "/categoria/series" */}
+                                    <p style={{fontSize:"larger"}} className='me-4 d-none d-sm-inline'>Series</p>
                                 </Link>
                             </li>
                         </ul>
                         <hr style={{ color: "white" }} />
-                        <ul className='d-flex flex-column align-items-start mt-3'>
+                        <ul className='d-flex flex-column align-items-start'>
                             <li>
                                 <Link className='nav-link ' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Popular</span>
+                                    <p  className='me-4 d-none d-sm-inline'>Popular</p>
                                 </Link>
                             </li>
                             <li>
                                 <Link className='nav-link ' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>New</span>
+                                    <p className='me-4 d-none d-sm-inline'>New</p>
                                 </Link>
                             </li>
                             <li>
                                 <Link className='nav-link ' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Featured</span>
+                                    <p className='me-4 d-none d-sm-inline'>Featured</p>
                                 </Link>
                             </li>
                         </ul>
                         <hr style={{ color: "white" }} />
-                        <ul className='d-flex flex-column align-items-start mt-3'>
+                        <ul className='d-flex flex-column align-items-start'>
                             <li>
                                 <Link className='nav-link ' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Top</span>
+                                    <p className='me-4 d-none d-sm-inline'>Top</p>
                                 </Link>
                             </li>
                             <li>
-                                <Link className='nav-link ' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Action</span>
+                                <Link className='nav-link ' to="/genero/action">
+                                    <p className='me-4 d-none d-sm-inline'>Action</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link ' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Adventure</span>
+                                <Link className='nav-link ' to="/genero/adventure">
+                                    <p className='me-4 d-none d-sm-inline'>Adventure</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Animation</span>
+                                <Link className='nav-link' to="/genero/animation">
+                                    <p className='me-4 d-none d-sm-inline'>Animation</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Comedy</span>
+                                <Link className='nav-link' to="/genero/biography">
+                                    <p className='me-4 d-none d-sm-inline'>Biography</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Crime</span>
+                                <Link className='nav-link' to="/genero/comedy">
+                                    <p className='me-4 d-none d-sm-inline'>Comedy</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Documentary</span>
+                                <Link className='nav-link' to="/genero/crime">
+                                    <p className='me-4 d-none d-sm-inline'>Crime</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Drama</span>
+                                <Link className='nav-link' to="/genero/documentary">
+                                    <p className='me-4 d-none d-sm-inline'>Documentary</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>History</span>
+                                <Link className='nav-link' to="/genero/drama">
+                                    <p className='me-4 d-none d-sm-inline'>Drama</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Horror</span>
+                                <Link className='nav-link' to="/genero/fantasy">
+                                    <p className='me-4 d-none d-sm-inline'>Fantasy</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Mistery</span>
+                                <Link className='nav-link' to="/genero/history">
+                                    <p className='me-4 d-none d-sm-inline'>History</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Romance</span>
+                                <Link className='nav-link' to="/genero/horror">
+                                    <p className='me-4 d-none d-sm-inline'>Horror</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Sci-Fi</span>
+                                <Link className='nav-link' to="/genero/mistery">
+                                    <p className='me-4 d-none d-sm-inline'>Mistery</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Sport</span>
+                                <Link className='nav-link' to="/genero/music">
+                                    <p className='me-4 d-none d-sm-inline'>Music</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>Thriller</span>
+                                <Link className='nav-link' to="/genero/romance">
+                                    <p className='me-4 d-none d-sm-inline'>Romance</p>
                                 </Link>
                             </li>
                             <li className='mt-1'>
-                                <Link className='nav-link' to="">
-                                    <span className='ms-1 d-none d-sm-inline'>War</span>
+                                <Link className='nav-link' to="/genero/scifi">
+                                    <p className='me-4 d-none d-sm-inline'>Sci-Fi</p>
+                                </Link>
+                            </li>
+                            <li className='mt-1'>
+                                <Link className='nav-link' to="/genero/sport">
+                                    <p className='me-4 d-none d-sm-inline'>Sport</p>
+                                </Link>
+                            </li>
+                            <li className='mt-1'>
+                                <Link className='nav-link' to="/genero/thriller">
+                                    <p className='me-4 d-none d-sm-inline'>Thriller</p>
+                                </Link>
+                            </li>
+                            <li className='mt-1'>
+                                <Link className='nav-link' to="/genero/war">
+                                    <p className='me-4 d-none d-sm-inline'>War</p>
                                 </Link>
                             </li>
                         </ul>

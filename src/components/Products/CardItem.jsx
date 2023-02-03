@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import ProductsNavBar from '../ProductsNavBar/ProductsNavBar'
 
 function CardItem(props) {
-    const { id, name, year, director, plot, cast, genres, img, trailer } = props
+    const { id, name, year, director, plot, cast, genres, img, traile, onClick } = props
     const urlDetalle = `/movies/${id}-${name}`
 
     useEffect(() => (
@@ -19,7 +19,7 @@ function CardItem(props) {
             <Link to={urlDetalle} style={{ textDecoration: 'none' }} >
                 <Card className='bg-dark text-light' id='cardItemCardImg'>
                     <div className='mx-auto w-100'>
-                        <Card.Img variant="top" src={img} className='mx-auto w-100' id='cardItemImg' alt='cardImg' />
+                        <Card.Img variant="top" onClick={onClick} src={img} className='mx-auto w-100' id='cardItemImg' alt='cardImg' />
                     </div>
                 </Card>
             </Link>
